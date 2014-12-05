@@ -9,6 +9,8 @@ The script `capture-screens.sh` grabs the actual screen content. Open it in a te
 
 You can stop the capture process any time by hitting CTRL-c, and resume by just starting the script again. The naming convention of the capture files contain the timestamp at the moment of start, so at the end the movie frames will be in order. Because of this, you can also combine captured frames from different computers for example if you alternated between your laptop and your desktop.
 
+## Caveat: please check that files are actually being produced in the target directory as the script is running. You don't want to discover, after you're done with everything, that nothing got recorded.
+
 # Preparing for Movie Generation
 
 After recording the time-lapse, it's time to generate a movie out of it. For this, you'll need the `ffmpeg` command-line tool. Most Macs should already have it, but if you don't you can just download it with Homebrew.
